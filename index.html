@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 	<head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta charset="utf-8">
 		<title>Notify</title>
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -19,20 +19,23 @@
                 <div class="header-icons">
                     <a href="#">
                         <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x icon-bg" aria-hidden="true"></i>
-                            <i class="fa fa-apple fa-stack-1x" aria-hidden="true"></i>
+                            <span class="fa fa-circle fa-stack-2x icon-bg" aria-hidden="true"></span>
+                            <span class="fa fa-apple fa-stack-1x" aria-hidden="true"></span>
+                            <span class="visuallyhidden">Apple</span>
                         </span>
                     </a>
                     <a href="#">
                         <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x icon-bg" aria-hidden="true"></i>
-                            <i class="fa fa-android fa-stack-1x" aria-hidden="true"></i>
+                            <span class="fa fa-circle fa-stack-2x icon-bg" aria-hidden="true"></span>
+                            <span class="fa fa-android fa-stack-1x" aria-hidden="true"></span>
+                            <span class="visuallyhidden">Android</span>
                         </span>
                     </a>
                     <a href="#">
                         <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x icon-bg" aria-hidden="true"></i>
-                            <i class="fa fa-windows fa-stack-1x" aria-hidden="true"></i>
+                            <span class="fa fa-circle fa-stack-2x icon-bg" aria-hidden="true"></span>
+                            <span class="fa fa-windows fa-stack-1x" aria-hidden="true"></span>
+                            <span class="visuallyhidden">Windows</span>
                         </span>
                     </a>
                 </div>
@@ -42,24 +45,24 @@
             <div class="features-wrapper">
                 <div class="features-block">
                     <span class="fa-stack fa-5x">
-                        <i class="fa fa-circle fa-stack-2x features-icon-bg"></i>
-                        <i class="fa fa-cog fa-stack-1x features-icon-main"></i>
+                        <span class="fa fa-circle fa-stack-2x features-icon-bg"></span>
+                        <span class="fa fa-cog fa-stack-1x features-icon-main"></span>
                     </span>
                     <h2>Editable Theme</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.</p>
                 </div>
                 <div class="features-block">
                     <span class="fa-stack fa-5x">
-                        <i class="fa fa-circle fa-stack-2x features-icon-bg"></i>
-                        <i class="fa fa-star fa-stack-1x features-icon-main"></i>
+                        <span class="fa fa-circle fa-stack-2x features-icon-bg"></span>
+                        <span class="fa fa-star fa-stack-1x features-icon-main"></span>
                     </span>
                     <h2>Flat Design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.</p>
                 </div>
                 <div class="features-block">
                     <span class="fa-stack fa-5x">
-                        <i class="fa fa-circle fa-stack-2x features-icon-bg"></i>
-                        <i class="fa fa-globe fa-stack-1x features-icon-main"></i>
+                        <span class="fa fa-circle fa-stack-2x features-icon-bg"></span>
+                        <span class="fa fa-globe fa-stack-1x features-icon-main"></span>
                     </span>
                     <h2>Reach Your Audience</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla.</p>
@@ -72,7 +75,8 @@
                     <h2>Get Notified Of Any Updates!</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
                     <form>
-                        <input type="text" placeholder="Email address">
+                        <label class="visuallyhidden" for="email">Your email</label>
+                        <input id="email" type="text" placeholder="Email address" required>
                         <input type="submit" value="Notify">
                     </form>
                 </div>
@@ -82,6 +86,7 @@
             </div>
         </section>
         <section class="testimonials">
+            <h2 class="visuallyhidden">Testimonials</h2>
             <div class="quote">
                 <blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</blockquote>
                 <cite>Jane Hunt</cite>
@@ -116,53 +121,61 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse. </p>
                 <div class="socials-media">
                     <a href="#">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x social-icon-bg"></i>
-                            <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
+                        <span class="fa-stack fa-2x icon-block">
+                            <span class="fa fa-circle fa-stack-2x social-icon-bg"></span>
+                            <span class="fa fa-twitter fa-stack-1x" aria-hidden="true"></span>
+                            <span class="visuallyhidden">Twitter</span>
                         </span>
                     </a>
                     <a href="#">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x social-icon-bg"></i>
-                            <i class="fa fa-facebook fa-stack-1x" aria-hidden="true"></i>
+                        <span class="fa-stack fa-2x icon-block">
+                            <span class="fa fa-circle fa-stack-2x social-icon-bg"></span>
+                            <span class="fa fa-facebook fa-stack-1x" aria-hidden="true"></span>
+                            <span class="visuallyhidden">Facebook</span>
                         </span>
                     </a>
                     <a href="#">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x social-icon-bg"></i>
-                            <i class="fa fa-pinterest fa-stack-1x" aria-hidden="true"></i>
+                        <span class="fa-stack fa-2x icon-block">
+                            <span class="fa fa-circle fa-stack-2x social-icon-bg"></span>
+                            <span class="fa fa-pinterest fa-stack-1x" aria-hidden="true"></span>
+                            <span class="visuallyhidden">Pinterest</span>
                         </span>
                     </a>
                     <a href="#">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x social-icon-bg"></i>
-                            <i class="fa fa-google-plus-official fa-stack-1x" aria-hidden="true"></i>
+                        <span class="fa-stack fa-2x icon-block">
+                            <span class="fa fa-circle fa-stack-2x social-icon-bg"></span>
+                            <span class="fa fa-google-plus-official fa-stack-1x" aria-hidden="true"></span>
+                            <span class="visuallyhidden">Google plus</span>
                         </span>
                     </a>
                     <a href="#">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x social-icon-bg"></i>
-                            <i class="fa fa-linkedin fa-stack-1x" aria-hidden="true"></i>
+                        <span class="fa-stack fa-2x icon-block">
+                            <span class="fa fa-circle fa-stack-2x social-icon-bg"></span>
+                            <span class="fa fa-linkedin fa-stack-1x" aria-hidden="true"></span>
+                            <span class="visuallyhidden">LinkedIn</span>
                         </span>
                     </a>
                     <a href="#">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x social-icon-bg"></i>
-                            <i class="fa fa-youtube fa-stack-1x" aria-hidden="true"></i>
+                        <span class="fa-stack fa-2x icon-block">
+                            <span class="fa fa-circle fa-stack-2x social-icon-bg"></span>
+                            <span class="fa fa-youtube fa-stack-1x" aria-hidden="true"></span>
+                            <span class="visuallyhidden">YouTube</span>
                         </span>
                     </a>
                 </div>
             </div>
         </section>
         <footer>
-            <ul>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Email</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
         </footer>
 	</body>
 </html>

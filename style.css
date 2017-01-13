@@ -18,6 +18,18 @@ header::before {
     display: block;
 }
 
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
 .header-text {
     margin-left: 20%;
     margin-top: 163px;
@@ -50,11 +62,13 @@ header::before {
     color: rgba(50, 32, 26, 0.66);
 }
 
-.header-icons a:hover i:first-child {
+.header-icons a:focus span:first-child,
+.header-icons a:hover span:first-child {
     color: #2ecc71;
 }
 
-.header-icons a:hover i:last-child {
+.header-icons a:focus span:nth-child(2),
+.header-icons a:hover span:nth-child(2) {
     color: #ffffff;
 }
 
@@ -206,6 +220,7 @@ iframe {
     margin-left: 8px;
 }
 
+.photos a:focus > .overlay,
 .photos a:hover > .overlay {
     width: 50px;
     height: 50px;
@@ -246,11 +261,12 @@ iframe {
     flex-wrap: wrap;
 }
 
-.socials-media span i:last-child {
+.icon-block span:nth-child(2) {
     color: #ffffff;
 }
 
-.socials-media a:hover i:first-child {
+.socials-media a:focus span:first-child,
+.socials-media a:hover span:first-child {
     color: #2ecc71;
 }
 
@@ -289,6 +305,7 @@ footer a {
     font-size: 20px;
 }
 
+footer a:focus,
 footer a:hover {
     color: #000;
 }
@@ -348,6 +365,10 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 516px) {
+    header {
+        background: url("imgs/bg.jpg") no-repeat scroll 60% 50%;
+    }
+    
     iframe {
         width: 320px;
         height: 240px;
@@ -371,6 +392,18 @@ footer a:hover {
     }
     
     .photos li {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    footer ul {
+        flex-direction: column;
+    }
+    
+    footer li {
+        width: 100%;
+        text-align: center;
         margin: 0;
     }
 }
